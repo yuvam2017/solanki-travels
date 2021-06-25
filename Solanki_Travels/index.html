@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solanki Travels | Book Cars</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css"
+    integrity="sha512-RliK2gk03WxUELn57ddjWLhEfhUiOZ85VvWLImFy8A7FOPMkF4Z9YGQ3VKX5jpwkEerAL6I0nC+JNeCPrxWBTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+  <header>
+    <div class="bgimage">
+      <img src="./assets/images/a10.jpg" alt="">
+    </div>
+    <div class="container-fluid">
+      <div class="logo">
+        <img id="home_logo" src="./assets/images/logo.png" alt="Solanki Travels">
+      </div>
+      <nav>
+        <ul>
+          <li class="toogle-hide"><a href="./index.html">Home</a></li>
+          <li class="toogle-hide"><a href="./about.html">About</a></li>
+          <li class="toogle-hide"><a href="./contactus.html">Contact</a></li>
+          <div class="menu">
+            <button onclick="toogleMenuBar()" class="btn menu-dropdown-button">
+              <i class="bi bi-list"></i>
+            </button>
+            <div id="menu-dropdown-content" class="shadow border menu-dropdown-content">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contactus.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </ul>
+      </nav>
+      <div class="header-text" loading="lazy">
+        <div class="tagline text-center">
+          Fast and easy way to Book Car
+        </div>
+        <div class="tagline2 text-center">
+          Get A Car Booked Now
+        </div>
+        <div class="button-get-started text-center my-4">
+          <button onclick="document.getElementById('get-started-trigger').scrollIntoView()"
+            class="btn-get shadow border">
+            Get Started
+          </button><br>
+          <button onclick="redirectToWhatsapp('btn-get-whatsapp-1')" id="btn-get-whatsapp-1"
+            class="btn-get-whatsapp btn btn-success"><i class="bi bi-whatsapp"></i> Whatsapp</button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="card-categ shadow border m-2 mx-auto">
+    <div class="heading-card">Better Way To Rent Your Perfect Cars
+    </div>
+    <div class="container">
+
+      <div class="badge-col">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p> Choose Your Location</p>
+      </div>
+      <div class="badge-col">
+        <i class="bi bi-hand-thumbs-up"></i>
+        <p> Best Deals</p>
+      </div>
+      <div class="badge-col">
+        <i class="bi bi-check-all"></i>
+        <p> Authorised Services</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="get-started-trigger" class="my-5 container-fluid mx-auto border shadow text-center container-book">
+    <h4>Book the Car Now </h4>
+    <p>By Sending Hi on Whatsapp</p>
+    <button onclick="redirectToWhatsapp('btn-get-whatsapp-2')" id="btn-get-whatsapp-2"
+      class="btn-whatsapp btn btn-success"><i class="bi bi-whatsapp"></i> Whatsapp</button>
+    <button class="btn-telephone btn btn-warning"><i class="bi bi-telephone-fill"></i> Call Us</button>
+  </div>
+
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <div class="footer-col-heading footer-col-1-heading">
+            SOLANKI<span style="color:#3eaa82">TRAVELS</span>
+          </div>
+
+          <div class="footer-col-para footer-col-1-para">
+            Searching For Cars.. <br> Here is the best option <br> Go with Solanki Travels
+          </div>
+
+          <div class="social-icons">
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+        </div>
+
+
+        <div class="footer-col">
+          <div class="footer-col-heading footer-col-2-heading">
+            Information
+          </div>
+
+          <div class="footer-col-para footer-col-2-para">
+            <ul>
+              <li><a href="./about.html">About</a></li>
+
+              <li><a href="./terms-and-conditions.html">Terms and Conditions</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="footer-col">
+          <div class="footer-col-heading footer-col-4-heading">
+            Have a Quesion?
+          </div>
+
+          <div class="footer-col-para footer-col-4-para">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-geo-alt-fill">
+                  </i>
+                  Civil Line Colony, <br> Vikash Bhawan Ballia, UP - 277001
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:+919125180076">
+                  <i class="bi bi-telephone-fill">
+                  </i>
+                  +919125180076
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:sumit.singh.31.08.1994@gmail.com">
+                  <!-- <i class="bi bi-geo-fill"></i> -->
+                  <i class="bi bi-envelope-fill"></i>
+                  sumit.singh.31.08.1994@gmail.com
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- <script src="./assets/js/indexjquery.js"></script> -->
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
