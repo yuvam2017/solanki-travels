@@ -15,7 +15,7 @@ function redirectToWhatsapp(id) {
   document.getElementById(id).addEventListener('click',e=> 
   {
     e.preventDefault();
-    window.location.replace('https://wa.me/+919125180076')
+    window.location.replace('https://wa.me/+917206077872')
   })
 }
 
@@ -23,7 +23,7 @@ function redirectToWhatsapp(id) {
 let telephone_btn = document.querySelector('.btn-telephone')
 
 telephone_btn.addEventListener('click', e => {
-  window.location.replace('tel:+919125180076')
+  window.location.replace('tel:+917206077872')
 })
 document.getElementById('home_logo').addEventListener('click',e => {
   window.location.replace('index.html')
